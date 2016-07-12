@@ -1,7 +1,7 @@
 require 'api_constraints'
 
 StudentApi::Application.routes.draw do
-  devise_for :classrooms
+#  devise_for :classrooms
   namespace :api, defaults: { format: :json },
                               constraints: { subdomain: 'api' }, path: '/' do
     scope module: :v1,

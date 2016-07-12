@@ -165,6 +165,8 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
     spring (1.7.2)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -216,6 +218,7 @@ DEPENDENCIES
   rspec-rails (~> 2.14)
   sass-rails (~> 5.0)
   sdoc
+  shoulda-matchers
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
