@@ -1,5 +1,7 @@
-class StudentsController < ApplicationController
-  before_action :set_student, only: [:show, :edit, :update, :destroy]
+class Api::V1::StudentsController < ApplicationController
+  respond_to :json
+
+  #before_action :set_student, only: [:show, :edit, :update, :destroy]
 
   # GET /students
   # GET /students.json
@@ -10,6 +12,7 @@ class StudentsController < ApplicationController
   # GET /students/1
   # GET /students/1.json
   def show
+    respond_with Student.find(params[:id])
   end
 
   # GET /students/new
